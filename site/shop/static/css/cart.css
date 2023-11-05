@@ -1,0 +1,105 @@
+/* Стилі для таблиці кошика */
+table.cart {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table.cart th, table.cart td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.cart th {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: red;
+}
+
+p.text-right {
+    text-align: center;
+    align-items: center;
+}
+
+.cart img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* Стилі для кнопок в кошику */
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.button.light {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Стилі для загальної ціни в кошику */
+tr.total {
+    font-weight: bold;
+}
+
+tr.total td.num {
+    font-size: 18px;
+    color: #007bff;
+}
+
+#content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Елементи сторінки виправлятимуться в колонку для заповнення всього екрану */
+    align-items: center; /* Елементи будуть вирівняні по центру */
+}
+
+@media only screen 
+  and (min-device-width: 350px) 
+  and (max-device-width: 3500px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    /* Стилі для таблиці кошика */
+    table.cart {
+        width: 100%;
+    }
+
+    /* Стилі для кнопок в кошику */
+    p.text-right {
+        text-align: center;
+    }
+
+    /* Стилі для загальної ціни в кошику */
+    tr.total {
+        text-align: center;
+    }
+    #content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Елементи сторінки виправлятимуться в колонку для заповнення всього екрану */
+    align-items: center; /* Елементи будуть вирівняні по центру */
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Гнучкі контейнери для товарів */
+    gap: 20px;
+}
+}
